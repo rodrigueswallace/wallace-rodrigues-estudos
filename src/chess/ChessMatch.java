@@ -7,7 +7,11 @@ import java.util.stream.Collectors;
 import Boardgame.Board;
 import Boardgame.Piece;
 import Boardgame.Position;
+import chess.pieces.Bishop;
 import chess.pieces.King;
+import chess.pieces.Knight;
+import chess.pieces.Pawn;
+import chess.pieces.Queen;
 import chess.pieces.Rook;
 
 public class ChessMatch {
