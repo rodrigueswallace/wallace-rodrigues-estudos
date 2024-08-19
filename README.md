@@ -56,15 +56,3 @@ If you wish to contribute to the project, follow these steps:
    
    ```bash
    java application/Program
-
-
-
-
-
-
-
-
-
-
- 
-
