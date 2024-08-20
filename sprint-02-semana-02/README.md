@@ -27,7 +27,7 @@ Follow these steps to set up the environment and run the game:
 2. **Navigate to the `bin` directory of the project:**
 
    ```bash
-   cd chess-system/bin
+   cd ../chess-system/bin
 
    
 ## Game Rules
