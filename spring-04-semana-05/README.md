@@ -43,6 +43,14 @@ Connect MongoDB to **localhost** on port **27017**. Then, create a database name
 ```bash
    mvn exec:java
 ```
+5. Running a Spring Boot Application
+
+To run the Spring Boot application, use the following command:
+
+```bash
+mvn spring-boot:run
+```
+
 
 ### 3. API Endpoints
 
