@@ -136,11 +136,15 @@ HTTP Method: DELETE
 
 
 5. Filters to select collections based on the year
+   
 URL: /books/={filter}
+
 HTTP Method: GET
 
-6. Filters to select specific collections
+7. Filters to select specific collections
+   
 URL: /books/books-after-year?year={filter}
+
 HTTP Method: GET
 
 
