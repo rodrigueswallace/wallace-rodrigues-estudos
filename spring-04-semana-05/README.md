@@ -49,11 +49,11 @@ Connect MongoDB to **localhost** on port **27017**. Then, create a database name
 **Base URL**
 
 ```bash
-http://localhost:3000/books
+http://localhost:8080/books
 ```
 **Endpoints**
 
-1. get/books
+1. GET /books
    
    Returns all books in the collection.
 
@@ -136,14 +136,14 @@ HTTP Method: DELETE
 
 
 5. Filters to select collections based on the year
-   
-URL: /books/={filter}
+
+URL: /books/books-after-year?year={filter}
 
 HTTP Method: GET
 
 6. Filters to select specific collections
    
-URL: /books/books-after-year?year={filter}
+URL: /books/filters?text={filter}
 
 HTTP Method: GET
 
