@@ -141,7 +141,7 @@ URL: /books/={filter}
 
 HTTP Method: GET
 
-7. Filters to select specific collections
+6. Filters to select specific collections
    
 URL: /books/books-after-year?year={filter}
 
