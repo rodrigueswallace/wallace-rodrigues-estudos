@@ -101,6 +101,7 @@ Parameters:
 ```
 
 3. PUT /books/{id}
+   
 Updates the information of an existing book.
 
 URL: /books/{id}
@@ -127,6 +128,7 @@ Parameters:
 ```
 
 4. DELETE /books/{id}
+   
 Deletes a book from the collection.
 
 URL: /books/{id}
