@@ -25,21 +25,21 @@ Connect MongoDB to **localhost** on port **27017**. Then, create a database name
    
 ´´´bash
    git clone https://github.com/rodrigueswallace/wallace-rodrigues-estudos.git
-´´´´
+
 
 2. Navigate to the main project directory:
-´´´´bash
+´´´bash
    cd wallace-rodrigues-estudos/spring-04-semana-05/
-´´´´
+
 3. Compile and install the dependencies:
  
-bash
+´´´bash
    mvn clean install
-´´´´
+
 4. Run the project:
-bash
+´´´´bash
    mvn exec:java
-´´´´
+
 
 ### 3. Test the System Using Postman
 
