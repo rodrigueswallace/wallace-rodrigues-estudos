@@ -44,7 +44,103 @@ Connect MongoDB to **localhost** on port **27017**. Then, create a database name
    mvn exec:java
 ```
 
-### 3. Test the System Using Postman
+### 3. API Endpoints
+
+**Base URL**
+
+```bash
+http://localhost:3000/books
+```
+**Endpoints**
+
+1. get/books
+   Returns all books in the collection.
+
+   URL: /books
+   HTTP Method: GET
+
+   Response
+
+```bash
+[
+ {
+    "_id": "60c72b3f9f1b8a001c8e4b3b",
+    "title": "1984",
+    "author": "George Orwell",
+    "year": 1949,
+    "genre": "Dystopian"
+  }
+]
+```
+
+2. POST /books
+Creates a new book in the collection.
+
+URL: /books
+
+HTTP Method: POST
+Parameters:
+
+. title: The title of the book.
+. author: The author of the book.
+. year: The year of publication.
+. genre: The literary genre.
+
+. Request Body Example:
+
+```bash
+{
+    "_id": "60c72b3f9f1b8a001c8e4b3b",
+    "title": "1984",
+    "author": "George Orwell",
+    "year": 1949,
+    "genre": "Dystopian"
+  }
+```
+
+3. PUT /books/{id}
+Updates the information of an existing book.
+
+URL: /books/{id}
+
+HTTP Method: PUT
+
+Parameters:
+
+. title: New title of the book.
+. author: New author of the book.
+. year: New year of publication.
+. genre: New literary genre.
+
+Request Body Example:
+
+```bash
+{
+  "title": "Brave New World",
+  "author": "Aldous Huxley",
+  "year": 1932,
+  "genre": "Dystopian"
+}
+
+```
+
+4. DELETE /books/{id}
+Deletes a book from the collection.
+
+URL: /books/{id}
+HTTP Method: DELETE
+
+
+5. Filters to select collections based on the year
+URL: /books/={filter}
+HTTP Method: GET
+
+6. Filters to select specific collections
+URL: /books/books-after-year?year={filter}
+HTTP Method: GET
+
+
+### 4. Test the System Using Postman
 
 Now, open **Postman** to test the system.
 
