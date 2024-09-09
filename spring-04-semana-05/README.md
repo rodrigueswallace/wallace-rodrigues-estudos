@@ -54,6 +54,7 @@ http://localhost:3000/books
 **Endpoints**
 
 1. get/books
+   
    Returns all books in the collection.
 
    URL: /books
@@ -74,6 +75,7 @@ http://localhost:3000/books
 ```
 
 2. POST /books
+   
 Creates a new book in the collection.
 
 URL: /books
@@ -81,12 +83,12 @@ URL: /books
 HTTP Method: POST
 Parameters:
 
-. title: The title of the book.
-. author: The author of the book.
-. year: The year of publication.
-. genre: The literary genre.
+- title: The title of the book.
+- author: The author of the book.
+- year: The year of publication.
+- genre: The literary genre.
 
-. Request Body Example:
+- Request Body Example:
 
 ```bash
 {
@@ -107,12 +109,12 @@ HTTP Method: PUT
 
 Parameters:
 
-. title: New title of the book.
-. author: New author of the book.
-. year: New year of publication.
-. genre: New literary genre.
+- title: New title of the book.
+- author: New author of the book.
+- year: New year of publication.
+- genre: New literary genre.
 
-Request Body Example:
+- Request Body Example:
 
 ```bash
 {
