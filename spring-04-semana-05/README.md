@@ -1,58 +1,71 @@
-# Chess Game in Java
+# Library Management System
 
-Welcome to the Chess Game in Java! This is a chess project developed in Java, allowing two players to face off in a traditional chess match. The code is managed using Git, facilitating collaboration and version control.
-
-## Features
-
-- Traditional chess piece movement.
-- Support for special moves such as castling, en passant, and pawn promotion.
-- Check and checkmate detection.
+This is a library management system developed in Java, using MongoDB as the database.
 
 ## Requirements
 
-Before getting started, make sure you have the following software installed:
+To use the system, make sure you have the following requirements installed:
 
-- Java Development Kit (JDK) 11 or higher
-- Git Bash
+- **Java Development Kit (JDK) 11 or higher**
+- **Spring Tool Suite (STS) 4.24.0**
+- **Apache Maven**
+- **MongoDB 7.0.14**
+- **Postman**
 
-## Installation
+## Usage Steps
 
-Follow these steps to set up the environment and run the game:
+### 1. Configure the Database
 
-1. **Clone the repository:**
+Connect MongoDB to **localhost** on port **27017**. Then, create a database named library and a collection called books.
 
-   ```bash
-   git clone https://github.com/username/repo.git
+### 2. Clone and Run the Maven Project
+
+1. Clone the repository with the following command:
    
-2. **Navigate to the `bin` directory of the project:**
-
-   ```bash
-   cd ../chess-system/bin
-
    
-## Game Rules
+´´´bash
+   git clone https://github.com/rodrigueswallace/wallace-rodrigues-estudos.git
+´´´´
 
-The game follows standard chess rules, including:
+2. Navigate to the main project directory:
+´´´´bash
+   cd wallace-rodrigues-estudos/spring-04-semana-05/
+´´´´
+3. Compile and install the dependencies:
+ 
+bash
+   mvn clean install
+´´´´
+4. Run the project:
+bash
+   mvn exec:java
+´´´´
 
-- Piece movement
-- Capture and checkmate
-- Special rules (castling, en passant, etc.)
+### 3. Test the System Using Postman
 
-For more details about the rules of chess, refer to [this link to the official rules](https://www.cbx.org.br/files/downloads/Xadrez_lei_da_FIDE.pdf).
-The game follows standard chess rules, including:
+Now, open **Postman** to test the system.
 
-## Contributing
+- **Insert records**:
+  - Example request to insert data into the database:
+  
+    ![Exemplo de Inserção](img/img_inserir.png)
 
-If you wish to contribute to the project, follow these steps:
+-  **Delete records**:
+  - Example request to delete a record:
+  
+    ![Exemplo de Deleção](img/img_deletar.png)
 
-1. Fork the repository.
-2. Create a new branch for your feature or fix.
-3. Commit your changes.
-4. Send a pull request.
+- **Update records**:
+  - Example request to update data:
+  
+    ![Exemplo de Atualização](img/img_atualizar.png)
 
-## Usage
+- **Query with filter**:
+  - Example query with a custom filter:
+  
+    ![Exemplo de Consulta com Filtro](img/img_allFilter.png)
 
-  To start the game, run the command in the `bin` folder:
-   
-   ```bash
-   java application/Program
+- **Query with filter by year**:
+  - Example query filtering by year:
+  
+    ![Exemplo de Consulta por Ano](img/img_books-after-year.png)
