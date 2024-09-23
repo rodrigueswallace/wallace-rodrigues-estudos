@@ -16,7 +16,7 @@ API que recebe o nome e idade do usuário e retorna uma mensagem indicando se o 
 Primeiro, você precisa baixar o código do repositório, abra o Git Bash e execute o comando de clonagem:
 
 ```bash
-git clone https://github.com/usuario/repositorio.git
+git clone https://github.com/rodrigueswallace/wallace-rodrigues-estudos.git
 ```
 
 ### 2. Entrar no diretório do projeto
